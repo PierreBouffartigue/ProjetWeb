@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function boutique()
     {
-        $products = Product::inRandomOrder()->take(6)->get();
+        $products = Product::inRandomOrder()->take(3)->get();
         return view('products.boutique')->with('products', $products);
     }
 

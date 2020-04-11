@@ -29,9 +29,7 @@ Route::get('/CGV', function () {
     return view('CGV');
 });
 
-Route::get('/boutique', function () {
-    return view('products.boutique');
-});
+Route::get('/boutique', 'ProductController@boutique');
 
 Route::get('/launcher', function () {
     return view('launcher');
