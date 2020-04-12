@@ -50,4 +50,5 @@ Route::get('/CGV', function () {
     return view('CGV');
 });
 
+Route::post('/panier/ajouter', 'CartController@store')->name('cart.store');
 

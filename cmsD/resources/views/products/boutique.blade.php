@@ -19,12 +19,16 @@
                                                                         <img src="{{ $product->image }}" alt="">
                                                                     </div>
                                                                     <div class="team_info text-center">
-                                                                        <h3>{{ $product->title }}</h3>
-                                                                        <p>{{ $product->subtitle }}</p>
+                                                                        <h3>{!! $product->title !!}</h3>
+                                                                        <p>{!! $product->description !!}</p>
                                                                         <div class="social_link">
-                                                                            <p>{{ $product->getPrice() }}</p>
-                                                                            <form action="#" method="POST">
-                                                                                <a type="submit" class="btn btn-info">Ajouter au panier</a><br>
+                                                                            <p><b>{{ $product->getPrice() }}</b></p>
+                                                                            <form action="{{ route('cart.store') }}" method="POST">
+                                                                                @csrf
+                                                                                <input type="hidden" name="id" value="{{ $product->id }}">
+                                                                                <input type="hidden" name="title" value="{{ $product->title }}">
+                                                                                <input type="hidden" name="price" value="{{ $product->price }}">
+                                                                                <button type="submit" class="btn btn-info">Ajouter au panier</button><br>
                                                                             </form>
                                                                         </div>
                                                                     </div>
