@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 class RulesController extends Controller
 {
-    public function reglement()
+    public function reglement($slug)
     {
-    return view('reglement');
+        $post = Post::findBySlug($slug);
+
+        return view('post.show', ['post' => $post]);
     }
 }

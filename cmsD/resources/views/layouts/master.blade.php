@@ -57,7 +57,7 @@
 										<li><a href="{{ url('https://discordapp.com/invite/aUyDPjf') }}">Discord</a></li>
                                         <li><a href="#">Règles <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="{{ url('/reglement') }}">Réglement</a></li>
+                                                <li><a href="{{ url('/reglements') }}">Réglement</a></li>
                                                 <li><a href="{{ url('/CGV') }}">CGV</a></li>
                                             </ul>
                                         </li>
@@ -75,59 +75,9 @@
         </div>
     </header>
     <!-- header-end -->
-	<!-- slider-start -->
-    <div class="slider_area">
-            <div class="single_slider  d-flex align-items-center article_1 black_overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="slider_text text-center ">
-								<h3>Réglement du serveur :</h3>
-
-<p>1) Le racisme ou la discrimination ne sont pas tolérés.<br>
-
-2) Le respect est bien entendu le bienvenue sur ce serveur !<br>
-
-3) Ne réglez pas les problèmes par vous-mêmes, Le staff est là pour vous aider.<br>
-
-4) Toute négligence des règles peut occasionner une exclusion, une restriction de droits, ou un ban définitif.<br>
-
-5) Toute gêne occasionnée volontairement en vocal est passable de graves sanctions.<br>
-
-6) Il est interdit de détruire ou utiliser des véhicules ne vous appartenant pas.<br>
-
-7) L'utilisation du mod schematica est autorisée.<br>
-
-8) Tout ajout de mod pouvant donner un avantage au joueur est interdit et entrainera un ban définitif.<br>
-
-9) Le serveur est laïque, il vous est donc demander d'éviter les sujets religieux bien que nous les respectons.<br>
-
-10) Tout use bug utilisé est interdit.<br>
-
-11) Tout claim visant à embêter d'autre personnes sera supprimé.<br>
-
-12) Toute destruction massive sans but est interdit.<br>
-
-13) La revente d'items, pokémons ou encore points boutique du serveur avec de l'argent réel est strictement interdit.<br>
-
-14) Les multi-comptes sont autorisés mais la sanction d'un compte comptera pour les deux.<br>
-
-15) L'utilisation abusive du /nick ou le vol d'identité est interdit.<br>
-
-16) Des blocs d'échange sont disponibles dans les centres pokémon, l'arnaque lors d'un échange d'item ne pourra pas être remboursée.<br>
-
- 
-
-Le staff se réserve le droit de décider des sanctions et de les augmenter selon les antécédents et le comportement des joueurs.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider-end -->
-
+	<!-- content-start -->
+        @yield('content')
+    <!-- content-end -->
     <!-- news-start  -->
     <div class="photography_skill_area">
         <div class="container">
