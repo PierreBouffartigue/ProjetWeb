@@ -53,7 +53,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="{{ url('/') }}">Accueil</a></li>
-                                        <li><a href="{{ url('/admin') }}">Connexion</a></li>
+                                        <li><a href="{{ url('/admin') }}">Administration</a></li>
                                         <li><a href="{{ url('/boutique') }}">Boutique</a></li>
 										<li><a href="{{ url('/vote') }}">Voter</a></li>
 										<li><a href="{{ url('/launcher') }}">Launcher</a></li>
