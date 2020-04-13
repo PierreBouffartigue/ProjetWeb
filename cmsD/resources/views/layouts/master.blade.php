@@ -55,10 +55,10 @@
 										<li><a href="{{ url('/vote') }}">Voter</a></li>
 										<li><a href="{{ url('/launcher') }}">Launcher</a></li>
 										<li><a href="{{ url('https://discordapp.com/invite/aUyDPjf') }}">Discord</a></li>
-                                        <li><a href="#">Règles <i class="ti-angle-down"></i></a>
+                                        <li><a href="#">Autre <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="{{ url('/reglements') }}">Réglement</a></li>
-                                                <li><a href="{{ url('/CGV') }}">CGV</a></li>
+                                                <li><a href="http://pixelmonepicka.tebex.io/">Shop</a></li>
                                             </ul>
                                         </li>
                                     </ul>

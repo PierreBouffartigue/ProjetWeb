@@ -17,7 +17,7 @@
                                         <br><form action="#" method="POST">
                                             <a type="submit" target="_blank" class="btn btn-info">Voter</a><br>
                                         </form><br><br>
-                                    <h4><br><br>Une fois en jeu utilise /reward pour récupérer tes récompenses !</h4>
+                                    <br><br><p>Une fois en jeu utilise /reward pour récupérer tes récompenses !</p>
                                 </div>
                             </div>
                         </div>

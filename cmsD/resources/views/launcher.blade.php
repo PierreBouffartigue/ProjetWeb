@@ -11,6 +11,7 @@
 								<p>Téléchargez notre launcher pour profiter de nos fonctionnalités créés spécialement pour nos joueurs et accéder à notre serveur de jeu.</p>
 								<a href="https://cdn.discordapp.com/attachments/409395427826466827/685253311775113300/Epicka.jar"><img src="img/launcher/jar.png" alt=""></a>
 								<a href="https://www.technicpack.net/modpack/pixelmon-epicka.1570939"><img src="img/launcher/technic.png" alt=""></a>
+                                <br><br><br><p>Pour tout soucis d'installation, contactez-nous sur Discord</p>
                             </div>
                         </div>
                     </div>
