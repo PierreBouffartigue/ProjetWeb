@@ -9,14 +9,31 @@ Pour une meilleure gestion du site un CRUD (Create, Read, Update, Delete) a ét�
 
 ## Fonctionnalités majeures
 
-Le site comporte une page de règlement modifiable depuis la partie administration. Cette partie comporte une gestion de rang et permissions pour les utilisateurs eux aussi gérables. Ces permissions sont pour l'accès à la partie administration, il y a ensuite une gestion de google analytics, une gestion de pages, posts, des tables et la base de donnée, des hooks et des CRUD. 
-La gestion de la boutique du site peut donc être faite via cette partie administration. La boutique est entièrement fonctionnelle grâce à Stripe. Les paiements peuvent être gérés directement depuis son site (stripe.com). Le site comporte une zone de téléchargement des deux launchers, ils ne sont ici pas modifiables car les launchers ont un lien fixe et sont mis à jour directement depuis l'extérieur. Vient ensuite une radio (celle du serveur NationsGlory mais le lien peut être changé) sur la page d'accueil avec les informations du serveur Minecraft. Sur toutes les pages vous pourrez voir une système de News qui montre un canal textuel Discord. Cette implémentation a été faite grâce au bot WidgetBot qui permet aussi d'écrire les articles directement depuis le site, et par conséquent les annonces discord. La page "discord" accessible depuis la navbar renvoie directement au serveur Discord du serveur de jeu. **Partie vote**
+Le site comporte : 
+* Une page de règlement modifiable depuis la partie administration. 
+* Cette partie comporte une gestion de rang et permissions pour les utilisateurs eux aussi gérables. Ces permissions sont pour l'accès à la partie administration, il y a ensuite une gestion de google analytics, une gestion de pages, posts, des tables et la base de donnée, des hooks et des CRUD. 
+* La boutique qui est entièrement fonctionnelle grâce à Stripe. Les paiements peuvent être gérés directement depuis son site (stripe.com) et les articles peuvent être modifiés facilement via le CRUD.
+*  Une zone de téléchargement des deux launchers, ils ne sont ici pas modifiables car les launchers ont un lien fixe et sont mis à jour directement depuis l'extérieur. 
+* Vient ensuite une radio (celle du serveur NationsGlory mais le lien peut être changé) sur la page d'accueil avec les informations du serveur Minecraft. 
+* Sur toutes les pages vous pourrez voir une système de News qui montre un canal textuel Discord. Cette implémentation a été faite grâce au bot WidgetBot qui permet aussi d'écrire les articles directement depuis le site, et par conséquent les annonces discord. 
+* La page "discord" accessible depuis la navbar renvoie directement au serveur Discord du serveur de jeu. 
+* Une page de vote utilisable grâce au plugin EpickaVote
 
 ## Base de donnée
 Ma base de donnée est accessible [ici](https://github.com/PierreBouffartigue/ProjetWeb/tree/master/Database) et porte le nom de base "laravel" mais peut être renommée facilement en modifiant le .env à la racine du projet. Toute la base de donnée est gérable via la partie "Database" de la partie administration du site. 
 
 ## Installation
 
+Une fois la totalité des fichiers téléchargés :
+* Renommez le .env.example en .env
+* Depuis le fichier .env indiquez les informations de connexion à votre base de donnée
+* Effectuez la commande : `composer update`
+* Puis : `composer dump-autoload`
+* Ensuite : `php artisan migrate`
+* Après ça : `php artisan db:seed`
+* Et pour finir et lancer le site : `php artisan serve`
+
 ##  Utilisation
+Le site ne comporte pas de licence et peut donc être réutilisé et modifié sans problème, faites toutefois attention aux licences des packages et du Framework en lui même.
 
 ## Captures d'écran
