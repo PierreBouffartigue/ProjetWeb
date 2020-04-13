@@ -16,6 +16,7 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
+        "stripe/stripe-php": "^7.28",
         "tcg/voyager": "^1.4"
     },
     "require-dev": {
@@ -39,6 +40,9 @@
         "psr-4": {
             "App\\": "app/"
         },
+        "files": [
+            "app/Helpers.php"
+        ],
         "classmap": [
             "database/seeds",
             "database/factories"

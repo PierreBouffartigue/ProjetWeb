@@ -41,7 +41,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logo.png" alt="">
+                                    <a href="{{ url('/') }}"><img src="img/logo.png" alt="logo"/></a>
                                 </a>
                             </div>
                         </div>
@@ -63,6 +63,11 @@
                                         </li>
                                     </ul>
                                 </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="social_links">
+                                <a class="text-muted" href="{{ route('cart.index') }}">Panier <span class="badge badge-pill badge-dark">{{ Cart::count() }}</span></a>
                             </div>
                         </div>
                         <div class="col-12">

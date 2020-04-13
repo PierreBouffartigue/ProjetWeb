@@ -28,7 +28,7 @@ Route::group([], function () {
     });
 });
 
-Route::get('/boutique', 'ProductController@boutique');
+Route::get('/boutique', 'ProductController@boutique')->name('products.boutique');
 
 Route::get('/launcher', function () {
     return view('launcher');
@@ -51,4 +51,12 @@ Route::get('/CGV', function () {
 });
 
 Route::post('/panier/ajouter', 'CartController@store')->name('cart.store');
+Route::get('/panier', 'CartController@index')->name('cart.index');
+Route::delete('/panier/{rowId}', 'CartController@destroy')->name('cart.destroy');
+
+Route::get('/videpanier', function () {
+    Cart::destroy();
+});
+
+Route::get('/paiement', 'CheckoutController@index')->name('checkout.index');
 
