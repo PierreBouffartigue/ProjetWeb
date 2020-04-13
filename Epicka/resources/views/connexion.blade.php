@@ -1,4 +1,6 @@
+@extends('layouts.master')
 
+@section('content')
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">

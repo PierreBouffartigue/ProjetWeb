@@ -37,3 +37,8 @@ Une fois la totalité des fichiers téléchargés :
 Le site ne comporte pas de licence et peut donc être réutilisé et modifié sans problème, faites toutefois attention aux licences des packages et du Framework en lui même.
 
 ## Captures d'écran
+![enter image description here](https://cdn.discordapp.com/attachments/698581960179843262/699330765640433684/home.PNG)
+![enter image description here](https://cdn.discordapp.com/attachments/698581960179843262/699330764071763998/new.PNG)
+![enter image description here](https://cdn.discordapp.com/attachments/698581960179843262/699330765866926100/cart.PNG)
+![enter image description here](https://cdn.discordapp.com/attachments/698581960179843262/699330767594979428/crud_administration.PNG)
+![enter image description here](https://cdn.discordapp.com/attachments/698581960179843262/699330762520133672/responsive.PNG)
