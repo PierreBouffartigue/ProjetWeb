@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 13 avr. 2020 à 19:27
+-- Généré le :  lun. 13 avr. 2020 à 19:57
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -603,7 +603,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `products_title_unique` (`title`) USING HASH,
   UNIQUE KEY `products_slug_unique` (`slug`) USING HASH
-) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `products`
@@ -760,7 +760,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `avatar`, `email_verified_at`, `password`, `remember_token`, `settings`, `created_at`, `updated_at`) VALUES
-(1, 1, 'pierre', 'pierre.bouffartigue@yahoo.fr', 'users\\April2020\\MYIRu7s54P9ke70uP7xu.png', NULL, '$2y$10$OZPBqp1k.dUAmnRe9a5bJ.hf5kD3Y0aNOWyO2L3tKW2H0VJmSnZpC', '1rbLWC6T8AVOdpxvGBzp7LhGDGF8iUaXu6QboFAaZSWln3YP16LMkCCITPK4', '{\"locale\":\"fr\"}', '2020-03-16 22:59:51', '2020-04-09 12:25:16'),
+(1, 1, 'pierre', 'pierre.bouffartigue@yahoo.fr', 'users\\April2020\\MYIRu7s54P9ke70uP7xu.png', NULL, '$2y$10$OZPBqp1k.dUAmnRe9a5bJ.hf5kD3Y0aNOWyO2L3tKW2H0VJmSnZpC', 'rB6fzfBg0MRatj9RJ5KDyD0M7eY3WnhOiqT7XQSFKga3Zclycx3ePvazyD1u', '{\"locale\":\"fr\"}', '2020-03-16 22:59:51', '2020-04-09 12:25:16'),
 (2, 2, 'Test Deux', 'jfezfeziu@yahoo.fr', 'users/default.png', NULL, '$2y$10$BMwUHqj6Wr2slrIBBmXWpe7Q/nAUyiQxJHB7AwxP3WDatxGcTl87O', NULL, NULL, '2020-04-12 14:10:03', '2020-04-12 14:10:03');
 
 -- --------------------------------------------------------
@@ -789,7 +789,14 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `count` text COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `vote`
+--
+
+INSERT INTO `vote` (`id`, `count`) VALUES
+(1, '1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
