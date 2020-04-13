@@ -32,6 +32,7 @@ Une fois la totalité des fichiers téléchargés :
 * Ensuite : `php artisan migrate`
 * Après ça : `php artisan db:seed`
 * Et pour finir et lancer le site : `php artisan serve`
+* Passer un compte en administrateur : `php artisan voyager:admin your@email.com`
 
 ##  Utilisation
 Le site ne comporte pas de licence et peut donc être réutilisé et modifié sans problème, faites toutefois attention aux licences des packages et du Framework en lui même.
