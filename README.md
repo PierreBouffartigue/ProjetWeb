@@ -24,6 +24,11 @@ Ma base de donnée est accessible [ici](https://github.com/PierreBouffartigue/Pr
 
 ## Installation
 
+Prérequis :
+* Un serveur local (Wamp conseillé)
+* NodeJS
+* Pas obligatoire mais je conseille un IDE tel que Visual Studio Code pour ne pas se perdre dans les multiples dossiers du Framework
+
 Une fois la totalité des fichiers téléchargés :
 * Renommez le .env.example en .env
 * Depuis le fichier .env indiquez les informations de connexion à votre base de donnée
