@@ -20,7 +20,7 @@ class CheckoutController extends Controller
         Stripe::setApiKey('sk_test_MGJugsZeoFbyxSx3gLkGDJVE00zOZwXGLp');
 
         $intent = PaymentIntent::create([
-            'amount' => round(Cart::total()),
+            'amount' => round(Cart::total())*1000,
             'currency' => 'eur',
         ]);
 

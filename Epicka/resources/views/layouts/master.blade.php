@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Pixelmon Epicka</title>
+
+    @yield('extra-script')
+
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -164,6 +167,8 @@
 
 
     <script src="js/main.js"></script>
+
+@yield('extra-js')
 </body>
 
 </html>
